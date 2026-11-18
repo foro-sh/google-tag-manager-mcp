@@ -1,0 +1,272 @@
+{
+  "tools": [
+    {
+      "name": "gtm_account",
+      "label": "Read accounts",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_account_update",
+      "label": "Rename accounts",
+      "description": "Actions: update.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.manage.accounts"
+    },
+    {
+      "name": "gtm_auth_status",
+      "label": "Check the Google connection",
+      "description": "Diagnoses this server's Google credentials: whether an access token can be obtained, whether Google accepts it, which Tag Manager scopes it grants and how long until it expires.",
+      "writes": false
+    },
+    {
+      "name": "gtm_built_in_variable",
+      "label": "Read built-in variables",
+      "description": "Actions: list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_built_in_variable_edit",
+      "label": "Change built-in variables",
+      "description": "Actions: create, remove, revert.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_client",
+      "label": "Read server-side clients",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_client_edit",
+      "label": "Change server-side clients",
+      "description": "Actions: create, update, remove, revert.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_container",
+      "label": "Read containers",
+      "description": "Actions: get, list, lookup, snippet.",
+      "writes": false
+    },
+    {
+      "name": "gtm_container_edit",
+      "label": "Change containers",
+      "description": "Actions: create, update, combine, moveTagId.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_container_delete",
+      "label": "Delete containers",
+      "description": "Actions: remove.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.delete.containers"
+    },
+    {
+      "name": "gtag_destination",
+      "label": "Read Google tag destinations",
+      "description": "Lists the Google Tag destinations listed under https://tagmanager.google.com/#/home#tags.",
+      "writes": false
+    },
+    {
+      "name": "gtm_environment",
+      "label": "Read environments",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_environment_edit",
+      "label": "Change environments",
+      "description": "Actions: create, update, remove.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_environment_reauthorize",
+      "label": "Reauthorize environments",
+      "description": "Actions: reauthorize.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.publish"
+    },
+    {
+      "name": "gtm_folder",
+      "label": "Read folders",
+      "description": "Actions: get, list, entities.",
+      "writes": false
+    },
+    {
+      "name": "gtm_folder_edit",
+      "label": "Change folders",
+      "description": "Actions: create, update, remove, revert, moveEntitiesToFolder.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_gtag_config",
+      "label": "Read Google tag configs",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_gtag_config_edit",
+      "label": "Change Google tag configs",
+      "description": "Actions: create, update, remove.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_guide",
+      "label": "Read the GTM guides",
+      "description": "Returns Google Tag Manager best-practice guidance and step-by-step workflows as markdown.",
+      "writes": false
+    },
+    {
+      "name": "gtm_tag",
+      "label": "Read tags",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_tag_edit",
+      "label": "Change tags",
+      "description": "Actions: create, update, remove, revert.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_template",
+      "label": "Read custom templates",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_template_edit",
+      "label": "Change custom templates",
+      "description": "Actions: create, update, remove, revert, importFromGallery.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_transformation",
+      "label": "Read transformations",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_transformation_edit",
+      "label": "Change transformations",
+      "description": "Actions: create, update, remove, revert.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_trigger",
+      "label": "Read triggers",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_trigger_edit",
+      "label": "Change triggers",
+      "description": "Actions: create, update, remove, revert.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_user_permission",
+      "label": "Manage user permissions",
+      "description": "Actions: create, get, list, update, remove.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.manage.users"
+    },
+    {
+      "name": "gtm_variable",
+      "label": "Read variables",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_variable_edit",
+      "label": "Change variables",
+      "description": "Actions: create, update, remove, revert.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_version",
+      "label": "Read versions",
+      "description": "Actions: get, live.",
+      "writes": false
+    },
+    {
+      "name": "gtm_version_edit",
+      "label": "Change and delete versions",
+      "description": "Actions: update, remove, undelete.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containerversions"
+    },
+    {
+      "name": "gtm_version_set_latest",
+      "label": "Set the latest version",
+      "description": "Actions: setLatest.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_version_publish",
+      "label": "Publish a version",
+      "description": "Actions: publish.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.publish"
+    },
+    {
+      "name": "gtm_version_header",
+      "label": "Read version history",
+      "description": "Actions: list, latest.",
+      "writes": false
+    },
+    {
+      "name": "gtm_workspace",
+      "label": "Read workspaces",
+      "description": "Actions: get, list, getStatus.",
+      "writes": false
+    },
+    {
+      "name": "gtm_workspace_edit",
+      "label": "Change workspaces",
+      "description": "Actions: create, update, sync, resolveConflict, bulkUpdate.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    },
+    {
+      "name": "gtm_workspace_delete",
+      "label": "Delete workspaces",
+      "description": "Actions: remove.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.delete.containers"
+    },
+    {
+      "name": "gtm_workspace_version",
+      "label": "Create versions and previews",
+      "description": "Actions: createVersion, quickPreview.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containerversions"
+    },
+    {
+      "name": "gtm_zone",
+      "label": "Read zones",
+      "description": "Actions: get, list.",
+      "writes": false
+    },
+    {
+      "name": "gtm_zone_edit",
+      "label": "Change zones",
+      "description": "Actions: create, update, remove, revert.",
+      "writes": true,
+      "scope": "https://www.googleapis.com/auth/tagmanager.edit.containers"
+    }
+  ]
+}
