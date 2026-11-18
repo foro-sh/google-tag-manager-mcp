@@ -1,0 +1,19 @@
+google-tag-manager-mcp
+Copyright 2026 foro.sh
+
+This product serves the Google Tag Manager tools of google-tag-manager-mcp-core,
+part of Stape's Google Tag Manager MCP server
+(https://github.com/stape-io/google-tag-manager-mcp-server), licensed under the
+Apache License, Version 2.0. Stape is not affiliated with foro.sh, and this
+server is not a Stape product.
+
+What foro.sh changed, without modifying Stape's code:
+
+- Each Stape tool is served as a read tool plus one tool per Google OAuth scope
+  its other actions need (tools.ts). An action not classified there is not
+  served.
+- Google sign-in and token refresh are foro.sh's: the server gets each
+  caller's access token from foro's upstream broker (broker.ts) instead of
+  Stape's Cloudflare Worker OAuth.
+- The server speaks streamable HTTP from Node (server.ts) instead of stdio or a
+  Cloudflare Worker.

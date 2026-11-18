@@ -1,0 +1,35 @@
+{
+  "name": "google-tag-manager-mcp",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Stape's Google Tag Manager MCP tools behind foro.sh's gate, read-only by default",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "server.ts",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node server.ts",
+    "manifest": "node scripts/write-manifest.ts",
+    "test": "vitest run",
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/node": "2.1.2",
+    "@modelcontextprotocol/server": "2.4.0",
+    "google-tag-manager-mcp-core": "3.0.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@types/node": "^24.0.0",
+    "conventional-changelog-conventionalcommits": "^8.0.0",
+    "semantic-release": "^24.2.0",
+    "vitest": "^3.2.4"
+  }
+}
