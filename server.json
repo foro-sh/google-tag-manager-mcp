@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "sh.foro/google-tag-manager",
+  "title": "Google Tag Manager",
+  "description": "Google Tag Manager via Stape's tools: containers, tags, triggers, variables. Read-only by default.",
+  "version": "0.1.0",
+  "websiteUrl": "https://docs.foro.sh/google-tag-manager",
+  "repository": {
+    "url": "https://github.com/foro-sh/google-tag-manager-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{slug}.foro.sh/mcp",
+      "variables": {
+        "slug": {
+          "description": "Your server's slug, shown after you set up the Google Tag Manager blueprint on foro",
+          "isRequired": true
+        }
+      }
+    }
+  ]
+}
